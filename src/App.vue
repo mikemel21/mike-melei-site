@@ -9,9 +9,11 @@
     https://www.canva.com/learn/website-color-schemes/
     -->
     <nav class="nav-bar">
+      <p class="name-bar-left">Michael Melei</p>
       <router-link to="/">Home</router-link>
       <router-link to="/About">About Me</router-link>
       <router-link to="/Projects">Projects</router-link>
+      <router-link to="/Blog">Blog</router-link>
       <router-link to="/Contact">Contact Me</router-link>
     </nav>
 
@@ -29,6 +31,7 @@
   #app-area {
     width: 100vw;
     height: 100vh;
+    background-color: #0E0B16;
     /* background-color: rgb(64, 64, 64); */
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
         sans-serif;
@@ -37,15 +40,40 @@
     overflow: auto;
   }
   a {
+    width: max-content;
+    height: max-content;
     color: #E7DFDD;
-    font-size: 20px;
+    font-size: 1.25em;
+    border-radius: 4px;
     margin: 8px;
+    padding: 10px 16px;
+    line-height: 30px;
+
   }
   .nav-bar {
+    display: flex;
+    flex-direction: row;
     background-color: #A239CA;
     border-radius: 4px;
     padding: 5px 0px 5px 0px;
     width: 100vw;
+  }
+  .nav-bar a {
+    text-align: right;
+  }
+
+  .name-bar-left {
+    width: max-content;
+    height: max-content;
+    font-size: 2em;
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+    vertical-align: bottom;
+    align-content:flex-start;
+  }
+
+  a:hover {
+    background-color: rgb(87, 14, 156);
   }
 
   
