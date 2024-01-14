@@ -27,10 +27,11 @@
 
 <style scoped>
   #app-area {
-      height: 100vh;
-      /* background-color: rgb(64, 64, 64); */
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(64, 64, 64); */
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
   }
   router-view {
     overflow: auto;
@@ -43,7 +44,7 @@
   .nav-bar {
     background-color: #A239CA;
     border-radius: 4px;
-    padding: 5px;
+    padding: 5px 0px 5px 0px;
     width: 100vw;
   }
 
